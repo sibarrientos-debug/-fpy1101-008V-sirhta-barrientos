@@ -28,11 +28,10 @@ for i in range(cantidad_medicos):
             if años_experiencia <= 0:
                print("¡Error clínico! Ingresa un número entero positivo para la experiencia.")
             else:
-                if años_experiencia >= 0 and años_experiencia < 5:
-                    medico_residentes=medico_residentes+ 1
-                elif años_experiencia >=5:
-                    medico_especialistas=medico_especialistas+ 1
-
+                if años_experiencia < 5:
+                    medico_residentes += 1
+                else:
+                    medico_especialistas += 1
                 break
         except:
             print("¡Error clínico! Ingresa un número entero positivo para la experiencia.")
