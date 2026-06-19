@@ -29,9 +29,9 @@ while True:
                     elif numperstamo > stocklibros:
                         print(f"¡No hay suficientes libros disponibles! Actualmente, hay {stocklibros} libros en stock.")
                     else:
-                        stocklibros -= numperstamo
+                        prestamo=120-stocklibros
                         historial_prestamos+=1
-                        print(f"Préstamo realizado con éxito. Quedan {stocklibros} libros disponibles.")
+                        print(f"Préstamo realizado con éxito. Quedan {prestamo} libros disponibles.")
                 except:
                     print("¡Entrada inválida! Por favor, ingrese un número entero para el préstamo.")
             elif opcion == 3:
